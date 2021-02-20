@@ -4,7 +4,7 @@
 
 <img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip01.gif" width="480" height="270" /> <img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip02.gif" width="480" height="270" />
 
-Main features: 
+## Main features: 
 
 * Generation of radar **raw data** in real-time
 * Fully customizable radar parameters

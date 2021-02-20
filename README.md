@@ -24,7 +24,7 @@ A [video](link-to-video) showcasing the frameworks capabilities in different sce
 For a detailed instruction on how to install and use Vira on your platform, please refer to the links below.
 
 * [Installation Guide](https://github.com/chstetco/virtualradar/blob/main/docs/installation.md)
-* Framework Documentation
+* [Framework Documentation](https://github.com/chstetco/virtualradar/blob/main/docs/documentation.md)
 
 ## Reference
 Please cite our RA-L paper if you use this repository in your publications:

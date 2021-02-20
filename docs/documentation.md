@@ -10,6 +10,16 @@ This document guides you through the ViRa framework and provides important infor
 
 ## Getting Started
 
+### Using ViRa in a new Unity3D project
+1. Create a new Unity3D project using Unity's Built-In render pipeline
+2. Clone the repository into the previously created project folder
+3. That's it! After Unity3D loaded the new scripts, ViRa is ready to be used.
+
+### Using ViRa in an existing Unity3D project
+1. Copy the *ScreenSpaceRadarSimulation* folder and the *Prefab* into your existing Unity3D project folder
+2. Optionally, copy the *RosSharp* folder into your existing Unity3D project folder
+3. That's it! After Unity3D loaded the new scripts, ViRa is ready to be used.
+
 ### Important Objects
 1. **MainCam**. The radar sensor in Unity3D is approximated using a camera element. To make things easier, we created a prefab `MainCam` which can be directly used 
 in a new simulation scenario without the need of assigning any script functions. The `MainCam` object is linked to the `ScreenSpaceRadarControl` script which loads the radar configuration and fetches data from the GPU for further processing.

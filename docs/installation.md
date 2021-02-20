@@ -1,38 +1,25 @@
-# Virtual Radar: Real-Time Millimeter-Wave Radar Sensor Simulation for Perception-driven Robotics
+# Installation Guideline
+This document guides you through all the necessary steps to run ViRa on your machine. 
 
-**[ViRa](https://sites.google.com/view/virtualradar) is a real-time FMCW radar simulation frameworks aimed for robotic applications.**
+- [Requirements](#requirements)
+  - [Software Requirements](#software-requirements)
+  - [Hardware Requirements](#hardware-requirements)
 
-<img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip01.gif" width="480" height="270" /> <img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip02.gif" width="480" height="270" />
 
-The framework allows simulation of FMCW radar sensors with different configuration parameters in different scenarios embedded in the Unity3D game engine environment. 
+## Requirements
 
-## Main features
+### Software Requirements
+Currently, we have tested the framework **only on 64-Bit Windows 10** operating systems. For ROS, we tested both ROS Kinetic and ROS Melodic. ROS can be either installed on the same Windows PC or on an external Linux PC.
 
-* Generation of radar **raw data** in real-time
-* Fully customizable radar parameters
-* Modelling of multi-antenna systems
-* Modelling of wave penetration effects of non-conductive objects
-* Modelling of antenna radiation patterns for beamforming
+The following software packages are mandatory
 
-A [paper](link-to-paper) describing ViRa has been accepted for publication in the IEEE Robotics and Automation Letters (RA-L). 
-A [video](link-to-video) showcasing the frameworks capabilities in different scenarios can be found on our Youtube channel.
+- Unity3D 2019.4.8 or greater
+- ROS Kinetic or greater
+- Microsoft Visual Studio 2019
 
-**NOTE:** We are continuosly working to improve and expand the ViRa framework. For most recent news, please refer to our [news section](link-to-news)
+### Hardware Requirements
+We have tested ViRa with the following setup
 
-## Installation and Usage
-
-For a detailed instruction on how to install and use Vira on your platform, please refer to the links below.
-
-* Installation Guide
-* Framework Documentation
-
-## Reference
-Please cite our RA-L paper if you use this repository in your publications:
-```
-@article{schoeffmann2021vira,
-  title={Title},
-  author={Authors},
-  journal={Journal},
-  year={2021}
-}
-```
+- Processor: Intel i7-4770 @ 3.4GHz (8 cores)
+- RAM: 16GB
+- GPU: GeForce RTX 2060 (6GB VRAM)

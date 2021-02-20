@@ -14,7 +14,14 @@ The framework allows simulation of FMCW radar sensors with different configurati
 * Modelling of wave penetration effects of non-conductive objects
 * Modelling of antenna radiation patterns for beamforming
 
-A paper describing `ViRa` and it's features in detail has been accepted for the Robotics and Automation Letters (RA-L) journal. A short video showing `ViRa` in action can be found on our Youtube channel.
+A [paper](link-to-paper) describing ViRa has been accepted for publication in the IEEE Robotics and Automation Letters (RA-L). 
+A [video](link-to-video) showcasing the frameworks capabilities in different scenarios can be found on our Youtube channel.
 
+**NOTE:** We are continuosly working to improve and expand the ViRa framework. For most recent news, please refer to our [news section](link-to-news)
 
-Please refer to the [wiki-page](https://github.com/chstetco/virtualradar/wiki/_new) for additional information about code documentation, installation and usage instructions.
+## Installation and Usage
+
+For a detailed instruction on how to install and use Vira on your platform, please refer to the links below.
+
+* Installation Guide
+* Framework Documentation

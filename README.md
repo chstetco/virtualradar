@@ -2,6 +2,8 @@
 
 [ViRa](https://sites.google.com/view/virtualradar) is a real-time FMCW radar simulation frameworks aimed for robotic applications. The framework allows simulation of FMCW radar sensors with different configuration parameters in different scenarios. 
 
+![alt_text](https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip01.gif)
+
 Main features: 
 
 * Generation of radar **raw data** in real-time

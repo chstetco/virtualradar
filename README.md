@@ -25,3 +25,14 @@ For a detailed instruction on how to install and use Vira on your platform, plea
 
 * Installation Guide
 * Framework Documentation
+
+## Reference
+Please cite our RA-L paper if you use this repository in your publications:
+```
+@article{schoeffmann2021vira,
+  title={Title},
+  author={Authors},
+  journal={Journal},
+  year={2021}
+}
+```

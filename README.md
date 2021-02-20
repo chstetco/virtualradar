@@ -13,4 +13,4 @@ Main features:
 A paper describing `ViRa` and it's features in detail has been accepted for the Robotics and Automation Letters (RA-L) journal. A short video showing `ViRa` in action can be found on our Youtube channel.
 
 
-Please refer to the [wiki-page](https://gitlab.aau.at/chstetco/vira-virtual-radar/-/wikis/home) for additional information about code documentation, installation and usage instructions.
+Please refer to the [wiki-page](https://github.com/chstetco/virtualradar/wiki/_new) for additional information about code documentation, installation and usage instructions.

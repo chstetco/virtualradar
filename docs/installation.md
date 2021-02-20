@@ -26,7 +26,7 @@ We have tested the framework with the following setup
 - GPU: GeForce RTX 2060 (6GB VRAM)
 
 ### Installation Guide
-1. **Install Unity3D**. Download and install the Unity3D game engine environment V2019.4.8 or greater ([Link](https://unity3d.com/de/get-unity/download)). Note that the Microsoft Visual Studio environment comes with Unity3D.
+1. **Install Unity3D**. Download and install the Unity3D game engine environment V2019.4.8 or greater ([Link](https://unity3d.com/get-unity/download)). Note that the Microsoft Visual Studio environment comes with Unity3D.
 2. **(Optional) Install ROS**. You can either use ROS on a separate PC or you can install ROS on your Windows computer [using this guideline](http://wiki.ros.org/Installation/Windows). 
 3. **(Optional) Install ROS dependencies**. When you want to use the framework with ROS, you need the [rosbridge_suite](http://wiki.ros.org/rosbridge_suite) in order to communicate with the Unity3D environment.
 

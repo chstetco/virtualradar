@@ -29,12 +29,6 @@ Welcome to ViRa's documentation!
 	_site/troubleshooting
 
 .. toctree::
-	:maxdepth: 2
-	:caption: Changelog
-
-	_site/changelog
-
-.. toctree::
 	:caption: Contact
 
 	_site/contact

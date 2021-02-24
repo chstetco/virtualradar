@@ -28,7 +28,7 @@ ViRa features
 
 
 
-Our contribution
+Contribution
 ================
 
 To the best of our knowledge, ViRa is the first real-time millimeter-wave radar simulator embedded in the Unity3D game engine environment for providing realistic radar raw data in real-time.

@@ -9,7 +9,7 @@ ViRa is
 
 .. raw:: html
 
-	<iframe width="660" height="415" src="https://www.youtube.com/embed/CiRc5tCtCak?autoplay=1&showinfo=0&loop=1&cc_load_policy=1&playlist=YOiVr2A2TZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe width="660" height="415" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Our motivation
 ==============

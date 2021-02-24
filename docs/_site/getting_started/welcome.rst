@@ -13,7 +13,7 @@ ViRa is a real-time millimeter-wave radar sensor simulation framework built over
 
 Motivation
 ==============
-
+State-of-the-art algorithms rely on techniques known from artificial intelligence (deep learning). Such technology needs massive amount of training data in order to provide good results. Using real hardware leads to long periods of training in the lab, maybe often infeasible to acquire. Hence, training in simulation would speed up the whole process, leading to faster results due to the high degree of parallelism with modern computing hardware. In order to achieve such training and closing the sim-to-real gap, realistic models of sensors in simulation are needed to mimick real sensor behavior. FMCW radar sensors are potential candidates for future tasks in robotics, thanks to their small size and light weight. Hence, it is believed that providing a realistic radar simulation framework will boost research in robotics using such sensors in different application scenarios.
 
 
 ViRa features

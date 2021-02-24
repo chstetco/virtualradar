@@ -2,7 +2,7 @@
 
 **[ViRa](https://aau.at/vira) is a real-time FMCW radar simulation frameworks aimed for robotic applications.**
 
-<img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip01.gif" width="320" height="180" /> <img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip02.gif" width="320" height="180" />
+<img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip01.gif" width="416" height="234" /> <img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/ICRA2021_snip02.gif" width="416" height="234" />
 
 The framework allows simulation of FMCW radar sensors with different configuration parameters in different scenarios embedded in the Unity3D game engine environment. 
 

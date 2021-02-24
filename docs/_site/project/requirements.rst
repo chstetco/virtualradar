@@ -4,10 +4,6 @@
 Hardware and Software prerequisites
 ***********************************
 
-
-.. _Unreal Engine official instalation guide: https://docs.unrealengine.com/en-us/GettingStarted/Installation
-.. _Unreal Engine get source code guide: https://docs.unrealengine.com/en-us/GettingStarted/DownloadingUnrealEngine
-
 First of all and before installation, you will need to statisfy some hardware and software prerequisites:
 
 1. **Software**:

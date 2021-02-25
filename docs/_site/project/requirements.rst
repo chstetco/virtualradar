@@ -26,7 +26,3 @@ First of all and before installation, your system needs to statisfy some hardwar
 	- RAM: 16GB
 	- GPU: GeForce RTX 2060 (6GB VRAM)
 
-3. **You are now ready to install ViRa, import your photorrealistic scene and create your own awesome dataset!**
-
-
-

@@ -1,0 +1,5 @@
+// commands on ROS system:
+// roscore
+// rostopic echo /talker
+// rostopic pub /listener std_msgs/String "World!"
+// roslaunch rosbridge_server rosbridge_websocket.launch

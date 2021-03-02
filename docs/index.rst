@@ -17,7 +17,7 @@ Welcome to ViRa's documentation!
     :maxdepth: 2
     :caption: ViRa Project
     
-    _site/project/general
+    _site/project/structure
     _site/project/requirements
     _site/project/installation
     _site/project/sceneconfig

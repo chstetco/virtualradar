@@ -17,6 +17,7 @@ The ViRa project has the following folder structure
     Figure 1. ViRa project directory tree.
     
 - **Assets**. This is the main folder of the ViRa project.
+
     - **AuxiliaryScripts**. This folder contains axuiliary C# scripts for e.g. character movement.
     - **Materials**. Contains different material objects which can be applied to objects in Unity3D.
     - **Prefab**. The prefab folder containts prefabs for Unity3D. A prefab of the radar sensor is included.

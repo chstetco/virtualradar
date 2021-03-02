@@ -1,4 +1,4 @@
-<img src="https://github.com/chstetco/virtualradar/blob/main/readme_images/viralogo.png" width="265" height="127" /> # Virtual Radar: Real-Time Millimeter-Wave Radar Sensor Simulation for Perception-driven Robotics
+# Virtual Radar: Real-Time Millimeter-Wave Radar Sensor Simulation for Perception-driven Robotics
 
 **[ViRa](https://aau.at/vira) is a real-time FMCW radar simulation frameworks aimed for robotic applications.**
 

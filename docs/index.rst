@@ -32,13 +32,3 @@ Welcome to ViRa's documentation!
 	:caption: Contact
 
 	_site/contact
-
-	
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

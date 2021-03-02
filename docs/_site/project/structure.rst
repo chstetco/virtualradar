@@ -16,7 +16,7 @@ The ViRa project has the following folder structure
 
     Figure 1. ViRa project directory tree.
     
-- **Assets**. This is the main folder of the ViRa project.
+- **Assets**. This is the main folder of the ViRa project. It contains all necessary functionalities for radar data generation. The asset folder also includes assets obtained from the asset store, e.g. environment models, animations or controllers.
 
     - **AuxiliaryScripts**. This folder contains axuiliary C# scripts for e.g. character movement.
     - **Materials**. Contains different material objects which can be applied to objects in Unity3D.
@@ -28,10 +28,10 @@ The ViRa project has the following folder structure
     
 - **docs**. This folder contains the ViRa documentation generated with Sphinx.
 
-- **Library** 
+- **Library**. Contains metadata files.
 
-- **Logs** 
+- **Logs**. This folder contains log files from Unity3D.
 
-- **Packages** 
+- **Packages**. This folder contains installed packages. 
 
 - **ProjectSettings**. This folder contains the Unity3D project settings.

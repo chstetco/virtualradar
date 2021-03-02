@@ -21,7 +21,7 @@ First of all and before installation, your system needs to statisfy some hardwar
 2. **Hardware**
 
 	We have tested the framework with the following setup
-
+	
 	- Processor: Intel i7-4770 @ 3.4GHz (8 cores)
 	- RAM: 16GB
 	- GPU: GeForce RTX 2060 (6GB VRAM)

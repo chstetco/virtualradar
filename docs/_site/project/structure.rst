@@ -6,7 +6,7 @@ Project Structure
 
 The ViRa project has the following folder structure 
 
-.. image:: vira_structure.png
+.. figure:: vira_structure.png
     :scale: 100 %
     :align: center
     :alt: ViRa directory tree.

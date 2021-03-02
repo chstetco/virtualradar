@@ -23,7 +23,7 @@ A [video](link-to-video) showcasing the frameworks capabilities in different sce
 
 For a detailed instruction on how to install and use Vira on your platform, please refer to the links below.
 
-* [Installation Guide](link-to-install)
+* [Installation Guide](https://virtualradar.readthedocs.io/en/latest/_site/project/installation.html)
 * [Framework Documentation](https://virtualradar.readthedocs.io)
 
 ## Reference

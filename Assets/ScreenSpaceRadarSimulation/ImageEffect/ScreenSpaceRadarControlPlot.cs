@@ -17,7 +17,7 @@ using System.Diagnostics;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class RadarControl : MonoBehaviour
+    public class ScreenSpaceRadarControlPlot : MonoBehaviour
     {
         /* Properties for UI -- mainly contains radar sensor configuration parameters */
         #region Properties
@@ -58,6 +58,7 @@ namespace RosSharp.RosBridgeClient
         public int antennas = 1;
 
         // radar sampling frequency
+        [Range(10000.0f, 10000000.0f)]
         [Tooltip("Sampling Frequency of the radar chip")]
         public float samplingFrequency = 2000000.0f;
 
@@ -130,7 +131,7 @@ namespace RosSharp.RosBridgeClient
             }
 
             // assign shader to use
-            mat = new Material(Shader.Find("Hidden/RadarShader"));
+            mat = new Material(Shader.Find("Hidden/ScreenSpaceRadarShader"));
             copydepthmat = new Material(Shader.Find("Hidden/CopyDepthShader"));
 
             savechirps = chirps;
@@ -321,7 +322,7 @@ namespace RosSharp.RosBridgeClient
             data2 = new UnityEngine.Vector2[samples * chirps];
 
             // start timing
-            // stopwatch.Start();
+            //stopwatch.Start();
 
             // fetch data from GPU 
             Parallel.For(0, chirps, c =>
@@ -366,9 +367,11 @@ namespace RosSharp.RosBridgeClient
             });
 
             // stop timing and output elapsed time
-            // stopwatch.Stop();
-            // UnityEngine.Debug.Log(stopwatch.ElapsedMilliseconds.ToString("F4"));
-            // stopwatch.Reset();
+            //stopwatch.Stop();
+            //UnityEngine.Debug.Log(stopwatch.ElapsedMilliseconds.ToString("F4"));
+           //UnityEngine.Debug.Log(vec1[1].ToString("F4"));
+           //UnityEngine.Debug.Log(vec2[1].ToString("F4"));
+           //stopwatch.Reset();
 
             // unwrap raw data in a 1D vector containing both receiver signals sendarray = [Rx1, Rx2]
 

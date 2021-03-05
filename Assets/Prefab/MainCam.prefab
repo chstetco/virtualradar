@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7608915722648217292}
   - component: {fileID: 7608915722648217293}
   - component: {fileID: 7608915722648217290}
-  - component: {fileID: 7608915722648217329}
+  - component: {fileID: 6422832342692277716}
   m_Layer: 0
   m_Name: MainCam
   m_TagString: MainCamera
@@ -84,7 +84,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7608915722648217288}
   m_Enabled: 1
---- !u!114 &7608915722648217329
+--- !u!114 &6422832342692277716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7608915722648217288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1b8409a866feef43812434dc3241c96, type: 3}
+  m_Script: {fileID: 11500000, guid: fb91a7181be5b7a4fa9644ee89ba7868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   optionselection: 0
@@ -103,8 +103,8 @@ MonoBehaviour:
   recv_config: 1
   antennas: 1
   samplingFrequency: 2000000
-  lowerFrequency: 0
-  bandwidth: 0
-  RadiationPatternMask: {fileID: 2800000, guid: d73becb9d4ab50e4a82bbab453cb4757,
+  lowerFrequency: 5.7e+10
+  bandwidth: 7e+9
+  RadiationPatternMask: {fileID: 2800000, guid: 30728ac6e1de491448f971a54fe480e1,
     type: 3}
   rosConnector: {fileID: 0}

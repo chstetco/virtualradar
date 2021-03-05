@@ -1,4 +1,4 @@
-﻿Shader "Hidden/RadarShader"
+﻿Shader "Hidden/ScreenSpaceRadarShader"
 {
 	// Properties section (see in editor)
 	Properties{
@@ -152,7 +152,7 @@
 					phase_shift_rx4 = 0.0f;
 				}
 	
-				float distance = depth * _MaxDistance / cos(azimuth_angle); // calculate distance (solid)
+				float distance = depth * _MaxDistance;// / cos(azimuth_angle); // calculate distance (solid)
 				float distancetrans = depthtrans * _MaxDistance; // calculate distance (transparent)
 				
 				if (distance >= _MaxDistance)
@@ -168,7 +168,7 @@
 				float velocity = (((depth - depthprev)  * _MaxDistance)) / delta_t; // velocity calculation (solid)	
 				float velocitytrans=velocitymaptrans; // velocity transparent
 
-				if (abs(velocity)<=abs(_MaxVelocity)) 
+				/*if (abs(velocity)<=abs(_MaxVelocity)) 
 				{
 					velocity = -velocity;
 				}
@@ -176,6 +176,7 @@
 				{
 					velocity = 0.0f;
 				}
+				*/
 
 				if (abs(velocitytrans) <= abs(_MaxVelocity)) 
 				{
@@ -331,7 +332,7 @@
 				float4 imageeffect;
 				imageeffect = lerp(float4(depth, depth, depth, 1), gbuffer1, _LerpSpecular); // lerp between depth and metallic				
 				imageeffect = lerp(imageeffect, gbuffer2, _LerpNormal); // lerp with normal texture			
-				return lerp(c, imageeffect, _Blend); // blend cameraview and effects
+				return lerp(c, imageeffect, 1.0f); // blend cameraview and effects
 			}
 			ENDCG
 		}

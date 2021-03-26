@@ -33,11 +33,12 @@ In Unity3D, do the following
 - Create a new GameObject 
 - To the created GameObject, add the *Ros Connector* script which interfaces to rosbridge.
 - The ROS connector needs to be configured to the rosbridge server IP address which should be configured in the field *Ros Bridge Server Url*
+- Add the *Float Array Publisher* script to the GameObject and assign a topic name, e.g. *radar_data*
 - Map the GameObject to the radar sensor, i.e. in the prefab model assign the GameObject to the RosConnector field.
 - Launch the rosbridge server using *roslaunch rosbridge_server rosbridge_websocket.launch*
-- Start the simulation.
+- Run the simulation. The raw data stream should now be available as a rostopic.
 
-.. figure:: rosconnecotr_inspector.PNG
+.. figure:: rosconnector.PNG
     :scale: 50%
     :align: center
     :alt: ViRa directory tree.

@@ -11,16 +11,17 @@ Radar Model
 
 The framework provides the radar sensor in Unity3D as a prefab model which can directly be imported and is linked to the radar scripts. In the following, we elaborate the most important settings of the radar sensor prefab.
 
- 1. Optionselection. Allows to transmit radar data either via ROS as a rostopic or directly via TCP/IP (e.g. for Matlab, Python, ...)
- 2. Fov. Defines the field-of-view of the radar sensor
- 3. Chirps. Defines the number of chirps of the radar signal
- 4. Samples. Defines the number of samples per radar chirp
- 5. Antennas. Defines the number of receiver antenna of the radar sensor.
- 6. Sampling Frequency. Defines the sampling frequency of the radar sensor.
- 7. Lower Frequency. Defines the lower chirp frequency of the radar sensor.
- 8. Bandwidth. Defines the bandwidth of the radar chirp.
- 9. Radiation Pattern Mask. Defines a radiation pattern mask of the radar. Chose None if not needed.
+- **Optionselection**. Allows to transmit radar data either via ROS as a rostopic or directly via TCP/IP (e.g. for Matlab, Python, ...)
+- **Fov**. Defines the field-of-view of the radar sensor
+- **Chirps**. Defines the number of chirps of the radar signal
+- **Samples**. Defines the number of samples per radar chirp
+- **Antennas**. Defines the number of receiver antenna of the radar sensor.
+- **Sampling Frequency**. Defines the sampling frequency of the radar sensor.
+- **Lower Frequency**. Defines the lower chirp frequency of the radar sensor.
+- **Bandwidth**. Defines the bandwidth of the radar chirp.
+- **Radiation Pattern Mask**. Defines a radiation pattern mask of the radar. Chose None if not needed.
 
+Parameters (6)-(8) are important for correct radar operation and are often obtained in the datasheets of FMCW radar sensors.
 
 Setting up ROS connection 
 ==================

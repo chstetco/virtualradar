@@ -4,7 +4,7 @@
 Scene Configuration
 ***********************************
 
-.. _ rosbridge: http://wiki.ros.org/rosbridge_suite
+.. _rosbridge: http://wiki.ros.org/rosbridge_suite
 
 Radar Model
 ==================
@@ -26,7 +26,7 @@ Parameters (6)-(8) are important for correct radar operation and are often obtai
 Setting up ROS connection 
 ==================
 
-To correctly set up the ROS connection to the Unity3D environment, the `rosbridge` package is mandatory and should be compiled in your ROS workspace.
+To correctly set up the ROS connection to the Unity3D environment, the `rosbridge`_ package is mandatory and should be compiled in your ROS workspace.
 
 In Unity3D, do the following
 

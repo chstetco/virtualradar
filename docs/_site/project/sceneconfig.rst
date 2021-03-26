@@ -9,7 +9,18 @@ Scene Configuration
 Radar Model
 ==================
 
-The framework provides the radar sensor in Unity3D as a prefab model which can directly be imported and is linked to the radar scripts. In the following, we elaborate the most important settings of the radar sensor prefab 
+The framework provides the radar sensor in Unity3D as a prefab model which can directly be imported and is linked to the radar scripts. In the following, we elaborate the most important settings of the radar sensor prefab.
+
+ 1. Optionselection. Allows to transmit radar data either via ROS as a rostopic or directly via TCP/IP (e.g. for Matlab, Python, ...)
+ 2. Fov. Defines the field-of-view of the radar sensor
+ 3. Chirps. Defines the number of chirps of the radar signal
+ 4. Samples. Defines the number of samples per radar chirp
+ 5. Antennas. Defines the number of receiver antenna of the radar sensor.
+ 6. Sampling Frequency. Defines the sampling frequency of the radar sensor.
+ 7. Lower Frequency. Defines the lower chirp frequency of the radar sensor.
+ 8. Bandwidth. Defines the bandwidth of the radar chirp.
+ 9. Radiation Pattern Mask. Defines a radiation pattern mask of the radar. Chose None if not needed.
+
 
 Setting up ROS connection 
 ==================

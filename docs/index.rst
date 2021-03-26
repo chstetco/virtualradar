@@ -21,6 +21,7 @@ Welcome to ViRa's documentation!
     _site/project/requirements
     _site/project/installation
     _site/project/sceneconfig
+    _site/project/datastructure
 
 .. toctree::
 	:maxdepth: 2

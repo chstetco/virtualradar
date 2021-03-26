@@ -45,3 +45,13 @@ In Unity3D, do the following
     :figclass: align-center
 
     Figure 1. Settings to be modified in the RosConnector GameObject.
+    
+Material Properties 
+===================
+
+The framework is capable of simulation wave penetration effects of non-conductive materials. To achieve this, a multi z-buffer approach was implemented in Unity, to account for penetration through objects executed in a non-conductive rendering pipeline.
+
+To assign an object to the non-conductive rendering pipeline do the following:
+
+- Assign a material to the object. You can either use a pre-defined material of the *Materials* folder or download/create your own one.
+- Once assigned, chose the *Standard* Shader option and chose *Transparent* in the Rendering Mode tab.

@@ -4,7 +4,7 @@
 Scene Configuration
 ***********************************
 
-.. rosbridge: http://wiki.ros.org/rosbridge_suite
+.. _ rosbridge: http://wiki.ros.org/rosbridge_suite
 
 Radar Model
 ==================

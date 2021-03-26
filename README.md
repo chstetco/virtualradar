@@ -29,10 +29,5 @@ For a detailed instruction on how to install and use Vira on your platform, plea
 ## Reference
 Please cite our RA-L paper if you use this repository in your publications:
 ```
-@article{schoeffmann2021vira,
-  title={Title},
-  author={Authors},
-  journal={Journal},
-  year={2021}
-}
+@ARTICLE{9387149,  author={C. {Schoffmann} and B. {Ubezio} and C. {Boehm} and S. {Muhlbacher-Karrer} and H. {Zangl}},  journal={IEEE Robotics and Automation Letters},   title={Virtual Radar: Real-Time Millimeter-Wave Radar Sensor Simulation for Perception-driven Robotics},   year={2021},  volume={},  number={},  pages={1-1},  doi={10.1109/LRA.2021.3068916}}
 ```

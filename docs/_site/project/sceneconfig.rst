@@ -39,7 +39,7 @@ In Unity3D, do the following
 - Run the simulation. The raw data stream should now be available as a rostopic.
 
 .. figure:: rosconnector.PNG
-    :scale: 50%
+    :scale: 70%
     :align: center
     :alt: ViRa directory tree.
     :figclass: align-center

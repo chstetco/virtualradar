@@ -9,7 +9,7 @@ Scene Configuration
 Radar Model
 ==================
 
-The framework provides the radar sensor in Unity3D as a prefab model which can directly be imported and is linked to the radar scripts. In the following, we elaborate the most important settings of the radar sensor prefab.
+The framework provides the radar sensor in Unity3D as a prefab model which can directly be imported and is linked to the radar scripts. The prefab model is found in the *Prefab* folder and is named **MainCam**. In the following, we elaborate the most important settings of the radar sensor prefab.
 
 - **Optionselection**. Allows to transmit radar data either via ROS as a rostopic or directly via TCP/IP (e.g. for Matlab, Python, ...)
 - **Fov**. Defines the field-of-view of the radar sensor in *degrees*.

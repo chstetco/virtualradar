@@ -156,18 +156,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7608915722648217288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb91a7181be5b7a4fa9644ee89ba7868, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b162c20d5970a34fa0831a45e40358e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   optionselection: 0
   fov: 100
-  chirps: 16
-  samples: 256
+  chirps: 1
+  samples: 300
   recv_config: 1
   antennas: 1
   samplingFrequency: 2000000
   lowerFrequency: 5.7e+10
   bandwidth: 7e+9
-  RadiationPatternMask: {fileID: 2800000, guid: 30728ac6e1de491448f971a54fe480e1,
-    type: 3}
+  RadiationPatternMask: {fileID: 0}
   rosConnector: {fileID: 306874905145676904}

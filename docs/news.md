@@ -1,5 +1,9 @@
 ## News
 
+- 2021-23-07
+  + We added some sample code for processing the output data of ViRa. 
+  + We will soon release further implementations for multi-antenna systems. Stay tuned!
+
 - 2021-02-03
   + ViRa's first release is online! V0.1.0 is now available for download.
 

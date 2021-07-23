@@ -4,6 +4,7 @@
 	Properties{
 	[HideInInspector] _MainTex("Base (RGB)", 2D) = "white" {}
 	_RadiationPatternMask("RadiationPatternMask", 2D) = "white" {}
+	_RadiationPatternMask("RoughnessMap", 2D) = "white" {}
 	_Blend("Blend", Range(0, 1)) = 0
 	_MaxDistance("MaxDistance", Range(0, 1)) = 0
 	_MaxVelocity("_MaxVelocity", Range(0, 100)) = 1
@@ -49,6 +50,7 @@
 			sampler2D _BTex;								// last frame depth texture
 			uniform sampler2D _MainTex;						// camera view texture
 			uniform sampler2D _RadiationPatternMask;		// Radiation Pattern Weighting Mask
+			uniform sampler2D _RoughnessMap; 
 			uniform float _Blend;							// blend between camera view and image effect
 			uniform float _MaxDistance;						// max. range possible given radar setup
 			uniform float _MaxVelocity;						// max. velocity given radar setup
@@ -87,6 +89,7 @@
 				float4 c = tex2D(_MainTex, i.screenuv);				// get color values from the camera view texture
 				
 				float radiationpatternweighting = tex2D(_RadiationPatternMask, i.screenuv).r; // get weighting value from texture
+				float roughness = tex2D(_RoughnessMap, i.screenuv).r; // get weighting value from texture
 				
 				// transparent objects velocity
 				float velocitymaptrans;
@@ -125,6 +128,7 @@
 				int y = int(i.screenuv.y * _height); // compute buffer height
 							
 				float azimuth_angle; 
+				float elevation_angle; 
 				float f;
 				float phase_shift_rx2;
 				float phase_shift_rx3;
@@ -140,7 +144,9 @@
 					
 				if (depth < 1)
 				{
+
 					azimuth_angle = atan((x - 0.5f * _width) / f);
+					elevation_angle = atan((y - 0.5f * _height) / f);
 					phase_shift_rx2 = (2 * pi * spacing * sin(azimuth_angle)) / lambda;
 					phase_shift_rx3 = (4 * pi * spacing * sin(azimuth_angle)) / lambda;
 					phase_shift_rx4 = (6 * pi * spacing * sin(azimuth_angle)) / lambda;
@@ -200,7 +206,7 @@
 				diffuse_trans = dot(sensor_direction, normalvectortrans);
 
 				float Rij = gbuffer1.a * diffuse;// +(1 - gbuffer1.a) * specular;// *(gbuffer1.r * gbuffer1.g * gbuffer1.b * gbuffer1.a); // reflection coefficient (solid)	
-				float Rijtrans = diffuse_trans;
+				float Rijtrans = roughness * diffuse_trans;
 
 				float distancefin = distance;
 				float distancefintrans = distancetrans;

@@ -19,7 +19,9 @@ A [video](https://www.youtube.com/watch?v=R3ZSykLs5iA) showcasing the frameworks
 
 **NOTE:** We are continuosly working to improve and expand the ViRa framework. For most recent news, please refer to our [news section](https://github.com/chstetco/virtualradar/blob/main/docs/news.md).
 
-![alt text](https://www.aau.at/wp-content/uploads/2021/02/efrelogo.png "Logo Title Text 1")
+<img src="https://www.aau.at/wp-content/uploads/2021/02/efrelogo.png" width="200" height="200" />
+
+![alt text](https://www.aau.at/wp-content/uploads/2021/02/KWF_FE_pos-aubergine-120x120.png)
 
 
 ## Installation and Usage

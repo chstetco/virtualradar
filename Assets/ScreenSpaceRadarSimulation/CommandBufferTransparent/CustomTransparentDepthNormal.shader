@@ -1,16 +1,18 @@
 ﻿Shader "Custom/CustomTransparentDepthNormal"
 {
-   
+    
 	Properties
 	{
 		//_Absorption("_Absorption", Range(0,1)) = 0
+		_RoughnessTex("RoughnessTex", 2D) = "white" {}
 	}
 		SubShader
 	{
-		 Tags{ "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent" }//transparent 
-
+		 Tags{ "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent" }//transparent 		
+	    
 		Pass//depth pass
 		{
+
 		ZTest Always //depth testing
 		Blend DstAlpha SrcAlpha //Multiplicative transparent blend (alpha)
 
@@ -61,7 +63,7 @@
 				c = input.linearDepth;
 			}
 
-			c.a = c.a + c.r + c.g;
+			c.a = c.a +c.r + c.g;
 
 			return c;
 			
@@ -74,7 +76,7 @@
 		{
 
 		//Blend SrcAlpha OneMinusSrcAlpha
-		//Blend One One
+	    //Blend One One
 
 			CGPROGRAM
 			#pragma vertex vert
@@ -191,6 +193,7 @@
 				// Properties
 				//sampler2D_float _CameraDepthTexture;
 				sampler2D _HoldDepthTexture;
+
 				float _Velocity;
 				struct vertexInput
 				{
@@ -257,8 +260,8 @@
 				{
 
 					//ZTest Always //depth testing
-					//Blend DstAlpha SrcAlpha //Multiplicative transparent blend (alpha)
-					Cull Back
+					Blend DstAlpha SrcAlpha //Multiplicative transparent blend (alpha)
+					//Cull Back
 
 
 						CGPROGRAM
@@ -269,6 +272,7 @@
 
 					float _ConductiveAdjustment;//1 is full metal
 					//float _TransparentObjectBlend;//blend between transparent objects
+
 					struct vertexInput
 					{
 						float4 vertex : POSITION;
@@ -303,6 +307,7 @@
 
 						//c = (1.0f-(1.0f/input.linearDepth)) *_ConductiveAdjustment;
 						c.rgb = input.linearDepth;
+						//fixed4 rough = tex2D(_RoughnessTex);
 						c.a = _ConductiveAdjustment;
 
 						return c;

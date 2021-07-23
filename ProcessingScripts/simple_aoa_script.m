@@ -107,19 +107,23 @@ while 1
      % Y1(:, i) = fftshift(Y1(:, i)); 
     end
     
-    IF_info = [Y1, Y2];
+  % IF_info = [Y1, Y2];
     
-    [~, rvLocs] = findpeaks(abs(Y1(roi)), 'MINPEAKHEIGHT', 0.1*max(abs(Y1(roi))), 'MINPEAKDISTANCE', 5);              
-    [target_range, aoa] = aoa_estimation(IF_info, rvLocs, ranges, start_bin);
+   % [~, rvLocs] = findpeaks(abs(Y1(roi)), 'MINPEAKHEIGHT', 0.1*max(abs(Y1(roi))), 'MINPEAKDISTANCE', 5);              
+    %[target_range, aoa] = aoa_estimation(IF_info, rvLocs, ranges, start_bin);
 
     %% Doppler FFT
-    for i = 1:fftSize
-      Sd(:, i) = fft(Y1(i, :).*chebWin', fftSize);
-    end
+   % for i = 1:fftSize
+    %  Sd(:, i) = fft(Y1(i, :).*chebWin', fftSize);
+   % end
 
-    Sd = fft(Su.'.*chebWin, fftSize).*scalechebWin; 
-    Sd = fftshift(abs(Sd));
+    %Sd = fft(Su.'.*chebWin, fftSize).*scalechebWin; 
+   % Sd = fftshift(abs(Sd));
 
+    clf
+    plot(abs(Y1))
+    drawnow
+   
     %% compute range and velocity
 %   SSr = mean(abs(Su(fftSize/2+1:end,:)), 2); 
 %   SSr = SSr./max(SSr);

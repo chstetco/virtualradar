@@ -74,6 +74,10 @@ namespace RosSharp.RosBridgeClient
         [Tooltip("Radiation Pattern Weighting Texture(No texture means no pattern)")]
         public Texture RadiationPatternMask;
 
+        // Radiation Pattern Mask of radar sensor
+        [Tooltip("Radiation Pattern Weighting Texture(No texture means no pattern)")]
+        public Texture RoughnessMap;
+
         // ROS connector for ROS communication via rosbridge
         private StreamWriter writer;
         [Tooltip("ROS connector (required Unity_to_ROS)")]
@@ -493,6 +497,8 @@ namespace RosSharp.RosBridgeClient
             }
 
             cam.farClipPlane = maxRange; // CameraFarPlane
+
+            mat.SetTexture("_RoughnessMap", RoughnessMap);
 
             if (RadiationPatternMask != null)
             {

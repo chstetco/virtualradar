@@ -9,6 +9,8 @@ public class CustomTransparentObj : MonoBehaviour
     [Range(0.0f, 1.0f)]
     [Tooltip("Conductive Control(Metal)")]
     public float conductiveAdjustment = 0.01f;
+    public Texture roughnessMap; 
+
     Vector3 oldcampos;//save previous camera(radar sensor) position
 
     float olddistanceCamAndObj;//distance between camera and this object
